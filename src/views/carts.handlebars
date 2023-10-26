@@ -1,0 +1,24 @@
+<h1>Visualizacion de carrito</h1>
+
+<table id="productsTable" class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Título</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}}
+        <tr>
+            <td>{{this.id_prod._id}}</td>
+            <td>{{this.id_prod.title}}</td>
+            <td>{{this.id_prod.description}}</td>
+            <td>{{this.id_prod.price}}</td>
+            <td>{{this.quantity}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
